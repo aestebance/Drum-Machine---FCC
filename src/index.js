@@ -4,6 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+document.addEventListener('keydown', (e) => {
+    const key = e.key.toUpperCase();
+    const audio = document.getElementById(key);
+
+    if (audio) {
+        audio.play();
+        const parent = audio.parentNode;
+        parent.classList.add('active');
+
+        audio.addEventListener('ended', () => {
+            parent.classList.remove('active');
+        });
+    }
+})
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
