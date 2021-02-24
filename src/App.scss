@@ -1,0 +1,17 @@
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  padding: 20px;
+  background-color: #7f8fa6;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #718093;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

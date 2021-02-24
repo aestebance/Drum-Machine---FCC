@@ -1,0 +1,20 @@
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 10px;
+  background-color: #718093;
+  font-family: Russo One, serif;
+  font-size: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.drum.active {
+  background-color: #fbc531;
+  transform: scale(0.92);
+}
