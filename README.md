@@ -1,1 +1,1 @@
-## Final Project 2 of FreeCodeCamp Front End Development Libraries - Markdown previewer
+### Final Project 3 of FreeCodeCamp Front End Development Libraries - Drum Machine
