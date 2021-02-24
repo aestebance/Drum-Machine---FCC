@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {sounds} from './utils/sounds';
 
 document.addEventListener('keydown', (e) => {
     const key = e.key.toUpperCase();
@@ -12,7 +13,8 @@ document.addEventListener('keydown', (e) => {
         audio.play();
         const parent = audio.parentNode;
         parent.classList.add('active');
-
+        const title = document.getElementById('currentSound');
+        title.innerText = sounds.filter((sound) => sound.letter === key.toUpperCase())[0].id;
         audio.addEventListener('ended', () => {
             parent.classList.remove('active');
         });
